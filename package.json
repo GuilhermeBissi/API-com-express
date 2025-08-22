@@ -1,20 +1,31 @@
 {
-  "name": "api-com-express",
+  "name": "nodejs-mongodb-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "api-com-express",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GuilhermeBissi/API-com-express.git"
+  "keywords": ["nodejs", "mongodb", "api", "express"],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "joi": "^17.11.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GuilhermeBissi/API-com-express/issues"
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   },
-  "homepage": "https://github.com/GuilhermeBissi/API-com-express#readme",
-  "description": ""
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
